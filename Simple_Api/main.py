@@ -14,7 +14,7 @@ def home():
 # Simple get request using flask
 @app.route("/print/<string>", methods = ["GET"])
 def printer(string):
-	response ={}
+	response = {}
 	response['string'] = string
 	return jsonify(response)
 	
