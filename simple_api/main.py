@@ -1,5 +1,5 @@
 # Standard Imports for a Flask Application
-from flask import Flask, jsonify, redirect, url_for, request
+from flask import Flask, jsonify
 
 # Create a Flask App object
 app = Flask(__name__)
@@ -15,7 +15,7 @@ def home():
 @app.route("/print/<string>", methods = ["GET"])
 def printer(string):
 	response ={}
-	response['string']=string
+	response['string'] = string
 	return jsonify(response)
 	
 
