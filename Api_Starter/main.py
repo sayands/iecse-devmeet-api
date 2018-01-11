@@ -52,41 +52,32 @@ def format_string(str):
 # Home route
 # Method : GET
 # This route is to test if Flask is working properly
-@app.route("/")
-def home():
-	return "Hello Flask"
 
 
 # Search All Music
 # Method : GET
 # This route should return a JSON Object with all the songs in the database
-@app.route("/search/", methods = ["GET"])
 
 
 # Search By Title
 # Method : GET
 # This route should return a JSON Object of the songs matching the title
-@app.route("/search/title/<title_entered>/", methods = ["GET"])
 
 
 # Search By Artist
 # Method : GET
 # This route should return a JSON Object of all the songs by a particular artist
-@app.route("/search/artist/<artist_entered>/", methods = ["GET"])
 
 
 # Search By Album
 # Method : GET
 # This route should return a JSON Object of all the songs from a particular album
-@app.route("/search/album/<album_entered>/", methods = ["GET"])
 
 
 # Add New Song To Database
 # Method : GET , POST
 # GET : This route should return a form to add a new song to the Database
 # POST : This route should add the new song to the Database
-@app.route("/add/", methods = ["GET", "POST"])
-
 
 
 # Start App
